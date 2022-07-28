@@ -1,0 +1,52 @@
+.main-content{
+  height: 100vh;
+  background-color: #003865;
+  position: relative;
+  .qr-button{
+    position: absolute;
+    top:calc(50% - 100px);
+    left:calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    --border-radius:16px;
+    &-icon{
+      --font-size:64px;
+    }
+  }
+
+
+.main-data-content{
+
+  
+    .url-content{
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    .mail-content{
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    .phone-content{
+      text-align: center;
+      font-size: 25px;
+    }
+  
+    .text-content{
+      p{
+        margin: 0px !important;
+        font-size: 24px;
+        font-weight: 600;
+      }
+  
+    }
+
+    *{
+      color: white;
+    }
+
+}  
+
+
+}

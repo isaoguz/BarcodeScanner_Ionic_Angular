@@ -1,0 +1,6 @@
+qr kod içinde olabilecekler:
+
+
+->mail
+->telefon numarası
+->text

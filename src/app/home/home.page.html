@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="main-content">
+    <ion-button *ngIf="!dataAccepted" (click)="scan()" class="qr-button">
+      <ion-icon class="qr-button-icon" slot="icon-only" name="qr-code-outline"> </ion-icon>
+    </ion-button>
+    <div *ngIf="dataAccepted">
+        <div class="main-data-content">
+            <div *ngIf="url_section" class="url-content">
+                <a [href]="qrcodeValue">{{qrcodeValue}}</a>
+            </div>
+            <div *ngIf="mail_section" class="mail-content"> 
+                <a href="mailto:{{qrcodeValue}}">{{qrcodeValue}}</a>
+                 </div>
+            <div  *ngIf="phone_section" class="phone-content">
+                <a href="tel:{{qrcodeValue}}">{{qrcodeValue}}</a>
+            </div>
+            <div  *ngIf="text_section" class="text-content"> 
+            <p>
+                {{qrcodeValue}}
+            </p>    
+            </div>
+        </div>
+        <div>
+            <ion-button (click)="scan()" expand="block">
+                QR Code Taraması Yap
+            </ion-button>
+        </div>
+    </div>
+  </div>
+</ion-content>
